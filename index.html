@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/SignUp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Filter</h1>
+    <div class="form">
+      <input type="text" id="filterAddress" placeholder="Enter your Location" />
+      <input type="text" id="filterFoodType" placeholder="Enter Food Type" />
+      <button type="submit" onclick="filter()">Filter</button>
+    </div>
+    <h1>Filtered Results</h1>
+    <div class="form" id="filteredResults"></div>
+
+    <h1>Add Restaurant</h1>
+    <div class="form">
+      <input type="text" id="restaurantName" placeholder="Restaurant Name" />
+      <input type="text" id="restaurantImage" placeholder="Restaurant Image URL" />
+      <input type="text" id="address" placeholder="Address" />
+      <input type="text" id="contact" placeholder="Contact" />
+      <input type="text" id="rating" placeholder="Rating" />
+      <h2>Food Items</h2>
+      <div id="foodItems">
+        <div class="form">
+          <input type="text" class="foodName" placeholder="Food Name" />
+          <input type="text" class="foodPrice" placeholder="Food Price" />
+          <input type="text" class="foodQuantity" placeholder="Food Quantity" />
+        </div>
+      </div>
+      <button type="button" id="addFoodItem">Add Food Item</button>
+      <button type="submit" onclick="addRestaurant()">Add Restaurant</button>
+    </div>
+
+    <h1>Forgot Password</h1>
+    <div class="form">
+      <input
+        type="text"
+        id="resetEmail"
+        placeholder="Enter your Mail Address"
+      />
+      <input type="text" id="resetName" placeholder="Enter your username" />
+      <input type="text" id="newPassword" placeholder="Enter New Password" />
+      <button type="submit" onclick="resetPassword()">Reset Password</button>
+    </div>
+    <h1>Login</h1>
+    <div class="form">
+      <input
+        type="text"
+        id="loginEmail"
+        placeholder="Enter your Mail Address"
+      />
+      <input type="text" id="loginPassword" placeholder="Enter Password" />
+      <button type="submit" onclick="login()">Login</button>
+    </div>
+
+    <h1>Sign Up</h1>
+    <div class="form">
+      <input type="text" id="fname" placeholder="Enter your Full Name" />
+      <input type="text" id="mail" placeholder="Enter your Mail Address" />
+      <input type="text" id="password" placeholder="Enter Password" />
+      <button type="submit" onclick="signUp()">Sign Up</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
